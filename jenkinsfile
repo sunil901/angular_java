@@ -1,21 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage ("2.Copy the project files") {
+    stage ("2.Build the docker image") {
       steps {
-        sh "mvn clean install"    
+        sh "docker build -t angular_image /home/jenkins"    
       }
-    }
-    stage ("3. Build the project") {
-      steps {
-        sh "cp -R /var/lib/jenkins/workspace/cicd_demo/target/* /home/jenkins"
-      }
-    }
-    
-    stage ("4. Build the docker image") {
-        steps {
-            sh "docker build -t maven_image /home/jenkins"
-        }
     }
   }
-}
+} 
+
