@@ -1,7 +1,7 @@
 ### New Angular project - CICD pipeline Jenkins 
 
 # Angular and TypeScript Hello World Project
-
+>>> The Hello world 
 The Hello World project is an Angular 2+ starter project that has the npm modules, 
 configuration, scripts and folders and routing in place to make getting started 
 with an Angular project easy!
