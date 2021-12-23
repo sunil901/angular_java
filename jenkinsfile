@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ("2.Build the docker image") {
       steps {
-        sh "docker build -t angular_image_009 /home/jenkins"    
+        sh "docker build -t angular_image_900 /home/jenkins"    
         }
      }
   }
